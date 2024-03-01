@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //exercicio 2
+        const total = Number(prompt("Digite a quantidade total de eleitores"))
+        const brancos = Number(prompt("Digite a quantidade de votos brancos"))
+        const nulos = Number(prompt("Digite a quantidade de votos nulos"))
+        const validos = Number(prompt("Digite a quantidade de votos válidos"))
+
+        const percBrancos = (brancos / total) * 100
+        const percNulos = (nulos / total) * 100
+        const percValidos = (validos / total) * 100
+        console.log("O total de eleitores é: ", total)
+        console.log("O Percentual de Brancos é: ", percBrancos + "%")
+        console.log("O Percentual de Nulos é: ", percNulos + "%")
+        console.log("O Percentual de Válidos é: ", percValidos + "%")
+
+        const soma = brancos + nulos + validos
+
+        if (soma > total) {
+            console.log("Erro: a soma dos votos não pode passar o total de eleitores")
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

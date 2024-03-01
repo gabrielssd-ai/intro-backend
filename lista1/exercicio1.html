@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //exercicio 1
+        const nota1 = Number(prompt("Digite a primeira nota: "))
+        const nota2 = Number(prompt("Digite a segunda nota: "))
+        const nota3 = Number(prompt("Digite a terceira nota: "))
+        const nota4 = Number(prompt("Digite a quarta nota: "))
+        const media = (nota1 + nota2 + nota3 + nota4) / 4
+
+        console.log("A média das notas é: ", media)
+        if (media >= 7) {
+            console.log("Aprovado")
+        } else if(media >= 5){
+            console.log("Recuperação")
+        }else{
+            console.log("Reprovado")
+        }
+
+
+
+        if (nota1 > 10 || nota2 > 10 || nota3 > 10 || nota4 > 10) {
+            console.log("A nota não pode ser maior que 10")
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
